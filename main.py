@@ -190,7 +190,7 @@ class MiMotionRunner:
 
         step = str(random.randint(min_step, max_step))
         self.log_str += f"已设置为随机步数范围({min_step}~{max_step}) 随机值:{step}\n"
-        
+
         user_token_info = user_tokens.get(self.user, {})
         bound_device_id = user_token_info.get("bound_device_id")
         if not bound_device_id and self.user_id:
